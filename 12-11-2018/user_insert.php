@@ -20,6 +20,7 @@ echo $query=mysqli_query($con,"INSERT INTO `user` (`fname`, `lname`, `email`, `p
 } else {
   echo 'Error: '.mysqli_error();
 }
+header('location:dashboard.php');
 ?>
 
 
